@@ -8,7 +8,7 @@ Sintaxe Javascript, variáveis e tipos de dados
 
 // Variáveis
 
-nome = "Guto"
+nome = "Guto de Jesus"
 console.log(nome)
 var nome = "José"
 console.log(nome)
