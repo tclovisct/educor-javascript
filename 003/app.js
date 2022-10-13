@@ -21,3 +21,9 @@ document.write('N1 % N2 =' + n1%n2 + "<br>")
 document.write('N1 ** N2 = ' + n1**n2 + "<br")
 
 document.write(Math.sqrt(16))
+
+function somar(){
+    let v1,v2
+    v1 = parseFloat(document.getElementById("valor1").value)
+    console.log(v1)
+}
