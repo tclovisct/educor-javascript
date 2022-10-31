@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+	<title>Lightbox com HTML, CSS, Bootstrap e Javascript</title>
+</head>
+<body>
+	<main class="principal">
+
+		<!-- Linha para os cachorros -->
+		<div class="linha">
+			<div class="coluna">
+				<img src="img/cachorro-01.jpg" onclick="abreLightbox();vaParaSlide(1)" class="sombra" alt="Cachorro 01" />
+			</div>
+			<div class="coluna">
+			    <img src="img/cachorro-02.jpg" onclick="abreLightbox();vaParaSlide(2)" class="sombra" alt="Cachorro 02" />
+			</div>
+			<div class="coluna">
+			    <img src="img/cachorro-03.jpg" onclick="abreLightbox();vaParaSlide(3)" class="sombra" alt="Cachorro 03" />
+			</div>
+		</div>
+
+
+		<div class="limpa"></div>
+
+
+		<!-- Linha para os gatos -->
+		<div class="linha">
+			<div class="coluna">
+				<img src="img/gato-01.jpg" onclick="abreLightbox();vaParaSlide(4)" class="sombra" alt="Gato 01" />
+			</div>
+			<div class="coluna">
+			    <img src="img/gato-02.jpg" onclick="abreLightbox();vaParaSlide(5)" class="sombra" alt="Gato 02" />
+			</div>
+			<div class="coluna">
+			    <img src="img/gato-03.jpg" onclick="abreLightbox();vaParaSlide(6)" class="sombra" alt="Gato 03" />
+			</div>
+		</div>
+
+
+		  
+		<div id="Lightbox" class="modal">
+		    <span class="fechar" onclick="fechaLightbox()">&times;</span>
+		    <div class="modal-conteudo">
+		    	<!-- Cachorros -->
+		    	<div class="slide">
+		    		<img src="img/cachorro-01.jpg" alt="Cachorro 01" />
+		      	</div>
+		      	<div class="slide">
+		        	<img src="img/cachorro-02.jpg" alt="Cachorro 02" />
+		      	</div>    
+		      	<div class="slide">
+		        	<img src="img/cachorro-03.jpg" alt="Cachorro 03" />
+		      	</div>
+
+		      	<!-- Gatos -->
+		      	<div class="slide">
+		        	<img src="img/gato-01.jpg" alt="Gato 01" />
+		      	</div>
+		      	<div class="slide">
+		        	<img src="img/gato-02.jpg" alt="Gato 02" />
+		      	</div>
+		      	<div class="slide">
+		        	<img src="img/gato-03.jpg" alt="Gato 03" />
+		      	</div>
+		    
+		      	<a class="anterior" onclick="trocaSlide(-1)">&#10094;</a>
+		      	<a class="proximo" onclick="trocaSlide(1)">&#10095;</a>
+		    </div> 
+		</div>
+		 
+	</main>
+
+	<script type="text/javascript" src="js/lightbox.js"></script>
+
+</body>
+</html>

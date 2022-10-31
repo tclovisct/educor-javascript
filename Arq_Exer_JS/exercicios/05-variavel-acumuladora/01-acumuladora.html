@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Variável acumulardora</title>
+</head>
+<body>
+	<h1>Variável acumulardora</h1>
+	<p id="teste">A soma de todos os números é: </p>
+
+	<script type="text/javascript">
+		//criando as variaveis
+		var cont=1
+		var total=0
+		var numero=0
+
+		//informar ao usuário o que ele precisa fazer
+		alert('Digite 10 números aleatórios')
+
+		//criando o laço de repetição
+		for(cont=1; cont<=10; cont++){
+			numero = parseInt(prompt('Digite o ' + cont + 'o número'))
+			total += numero
+		}
+
+		//mostrando o resultado
+		document.getElementById("teste").innerHTML += total
+	</script>
+
+</body>
+</html>

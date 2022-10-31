@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- CSS personalizado -->
+	<link rel="stylesheet" type="text/css" href="css/validaform.css">
+</head>
+<body>
+	<main>
+		<h1>
+			Validação de formulário com jQuery Validation
+		</h1>
+		<form name="form1" id="form1" method="post" action="">
+		  <fieldset>
+		  	<legend>Cadastro</legend>
+		    <p>
+		      <label for="nome">Nome (obrigatório, pelo menos 2 caracteres)</label><br>
+		      <input type="text" id="nome" name="nome" required minlength="2">
+		    </p>
+		    <p>
+		      <label for="email">E-mail (obrigatório)</label><br>
+		      <input type="email" id="email" name="email" required >
+		    </p>
+		    <p>
+		      <label for="idade">Idade (obrigatório)</label><br>
+		      <input type="number" id="idade" name="idade" required min="10" max="99" >
+		    </p>
+		    <p>
+		      <label for="comentario">Seu comentário (obrigatório)</label><br>
+		      <textarea id="comentario" name="comentario" rows="8" required ></textarea>
+		    </p>
+		    <p>
+		      <input type="submit" value="Enviar">
+		    </p>
+		  </fieldset>
+		</form>
+	</main>
+
+
+	<!-- Inclusão do jQuery via CDN - https://releases.jquery.com/ -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+	<!-- Inclusão do Plugin jQuery Validation - https://jqueryvalidation.org/ -->
+	<!--script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script-->
+		
+	<!-- O Plugin baixado com as traduções -->
+	<script src="js/jquery.validate.js"></script>
+	
+	<!-- Inclusão das validações com o Plugin jQuery Validation-->
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

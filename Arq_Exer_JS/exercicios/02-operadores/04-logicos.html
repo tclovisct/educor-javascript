@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Operadores lógicos</title>
+</head>
+<body>
+	<h1>Operadores lógicos</h1>
+	<h3>Lógico && (e)</h3>
+
+	<script type="text/javascript">
+		var resposta = true && true
+		document.write(resposta+'<br>')
+
+		resposta = false && false
+		document.write(resposta+'<br>')
+
+		resposta = false && true
+		document.write(resposta+'<br>')
+
+		resposta = false && (3==4)
+		document.write(resposta+'<br>')
+
+		resposta = 'Senac' && 'Javascript'
+		document.write(resposta+'<br>')
+
+		resposta = false && 'Senac'
+		document.write(resposta+'<br>')
+
+		resposta = 'Senac' && false
+		document.write(resposta + '<br>')
+
+		resposta = '' && false
+		document.write(resposta+'<br>')
+
+		resposta = false && ''
+		document.write(resposta+'<br>')
+	</script>
+
+
+
+	
+
+	<h3>Lógico || (ou)</h3>
+
+	<script type="text/javascript">
+		var resposta = true || true
+		document.write(resposta+'<br>')
+
+		resposta = false || true
+		document.write(resposta+'<br>')
+
+		resposta = true || false
+		document.write(resposta+'<br>')
+
+		resposta = false || (3==4)
+		document.write(resposta+'<br>')
+
+		resposta = 'Senac' || 'Javascript'
+		document.write(resposta+'<br>')
+
+	</script>
+
+
+
+
+
+	<h3>Lógico ! (not - não)</h3>
+
+	<script type="text/javascript">
+		var resposta = !true
+		document.write(resposta+'<br>')
+
+		resposta = !false
+		document.write(resposta + '<br>')
+
+		resposta = !'Senac'
+		document.write(resposta+'<br>')
+	</script>
+
+</body>
+</html>

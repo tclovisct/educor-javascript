@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laço de repetição WHILE</title>
+</head>
+<body>
+	<h1>Laço de repetição WHILE</h1>
+	<p id="tabuada"></p>
+
+	<script type="text/javascript">
+		// criando as variáveis 
+		var num = 5
+		var cont = 1
+		var resposta = ''
+
+		//criando a tabuada
+		while(cont <= 10){
+			resposta += num + 'X' + cont + '=' + (num*cont) + '<br>'
+			cont++
+		}
+
+		//mostrando a tabuada
+		document.getElementById('tabuada').innerHTML = resposta
+	</script>
+
+</body>
+</html>
